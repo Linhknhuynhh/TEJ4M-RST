@@ -45,7 +45,7 @@ class SpaceAliensGame:
     def run(self):
         self.splash_scene()
 
-    # ------------------ Scenes ------------------ #
+    # Scenes
     def splash_scene(self):
         background = stage.Grid(self.image_bank_mt, constants.SCREEN_X, constants.SCREEN_Y)
         self.game.layers = [background]
@@ -157,7 +157,7 @@ class SpaceAliensGame:
                 supervisor.reload()
             self.game.tick()
 
-    # ------------------ Private Methods ------------------ #
+    # Private Methods
     def score_text(self):
         self.score_text.clear()
         self.score_text.cursor(0,0)
